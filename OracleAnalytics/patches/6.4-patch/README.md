@@ -11,17 +11,17 @@ Download the following patches from
 [My Oracle Support](https://support.oracle.com)
 and place them in the same directory as this README.
 
-(1) p34080315_122140_Generic.zip
-(2) p33958532_122140_Generic.zip
-(3) p34044738_122140_Generic.zip
-(4) p32784652_122140_Generic.zip
-(5) p30613424_122140_Generic.zip
-(6) p31403376_122140_Generic.zip
-(7) p33618954_122140_Generic.zip
-(8) p33546536_12214211129_Generic.zip
-(9) p32575741_122140_Linux-x86-64.zip
-(10) p33950717_122140_Generic.zip
-(11) p34065178_122140_Generic.zip
+1. p34080315_122140_Generic.zip
+2. p33958532_122140_Generic.zip
+3. p34044738_122140_Generic.zip
+4. p32784652_122140_Generic.zip
+5. p30613424_122140_Generic.zip
+6. p31403376_122140_Generic.zip
+7. p33618954_122140_Generic.zip
+8. p33546536_12214211129_Generic.zip
+9. p32575741_122140_Linux-x86-64.zip
+10. p33950717_122140_Generic.zip
+11. p34065178_122140_Generic.zip
 
 To build, run:
 
