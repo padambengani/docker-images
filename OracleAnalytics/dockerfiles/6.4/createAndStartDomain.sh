@@ -156,7 +156,7 @@ if (( DB_WAIT_TIMEOUT > 0 )); then
    exit 3
  fi
  set +e
- echo "$DB_PASSWORD" | timeout "$DB_WAIT_TIMEOUT /u01/wait_for_db.sh $ORACLE_HOME $DB_USERNAME $DB_HOST $DB_PORT $DB_SERVICE"
+ echo "$DB_PASSWORD" | timeout "$DB_WAIT_TIMEOUT" /u01/wait_for_db.sh "$ORACLE_HOME" "$DB_USERNAME" "$DB_HOST" "$DB_PORT" "$DB_SERVICE"
  exit_code="$?"
  if [ ! "${exit_code}" -eq 0 ]; then
     echo "Reached timeout waiting for DB to start - exiting"
