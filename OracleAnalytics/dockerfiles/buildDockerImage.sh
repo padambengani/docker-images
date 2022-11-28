@@ -120,12 +120,12 @@ echo "Building image '$IMAGE_NAME' ..."
 
 # BUILD THE IMAGE (replace all environment variables)
 BUILD_START=$(date '+%s')
-docker build --force-rm=$NOCACHE --no-cache=$NOCACHE $SQUASH $PROXY_SETTINGS -t $IMAGE_NAME -f Dockerfile . || {
+docker build "--force-rm=$NOCACHE --no-cache=$NOCACHE $SQUASH $PROXY_SETTINGS -t $IMAGE_NAME -f Dockerfile ." || {
   echo "There was an error building the image."
   exit 1
 }
 BUILD_END=$(date '+%s')
-BUILD_ELAPSED=`expr "$BUILD_END" - "$BUILD_START"`
+BUILD_ELAPSED=$(( BUILD_END - BUILD_START ))
 
 echo ""
 
