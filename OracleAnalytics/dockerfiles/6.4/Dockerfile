@@ -50,7 +50,7 @@ USER root
 RUN yum -y install unzip hostname && rm -rf /var/cache/yum
 
 USER oracle
-RUN unzip $BI_DISTRO_ZIP1 -d /u01 && \
+RUN unzip "/u01/$BI_DISTRO_ZIP1" -d /u01 && \
     "$JAVA_HOME/bin/java" -jar "/u01/$BI_INSTALLER1" -silent -responseFile /u01/install.file \
     -invPtrLoc /u01/oraInst.loc -ignoreSysPrereqs -force -novalidation ORACLE_HOME="$ORACLE_HOME" \
     INSTALL_TYPE="Oracle Analytics" && \
